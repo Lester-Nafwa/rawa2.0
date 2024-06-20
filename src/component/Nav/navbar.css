@@ -1,0 +1,47 @@
+.navHeader {
+  display: flex;
+  gap: 2em;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+  min-width: 50%;
+  margin: 0 auto;
+ 
+}
+.container_main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 999;
+  position:fixed;
+  min-width: 100%;
+}
+.tab_details {
+  padding: 1em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.5em;
+  text-decoration: none;
+  /* min-width: 55em; */
+}
+.tab_details:hover {
+  background-color: #135e96;
+  color: white;
+  text-decoration: none;
+    text-decoration: none;
+}
+.tab_details_donate{
+  text-decoration: none;
+  color: white;
+  background-color: #0a4b78;
+  min-width: 5em;
+  padding: 1em;
+
+}
+.updated_logo{
+  max-height: 7em;
+  min-width: 25em;
+}

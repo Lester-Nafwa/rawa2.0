@@ -1,0 +1,37 @@
+.contact_us {
+  display: flex;
+  padding: 3em;
+  color: antiquewhite;
+  gap: 4em;
+  margin: 0 auto;
+  background: #0F7BC0;
+  box-shadow: rgba(222, 222, 227, 0.2) 0px 7px 29px 0px;
+  max-width: 60%;
+  opacity: 80%;
+}
+.contact_title{
+ margin-top: 7em;
+ font-weight: 600;
+ font-size: 2em;
+}
+.contact_details {
+  border-radius: 0.5em;
+  min-width: 100%;
+  background-color: white;
+  padding-right: 5em;
+  padding-top: 2em;
+  padding-left: 3em;
+  padding-bottom: 2em;
+  border: solid grey;
+  align-items: center;
+  box-shadow: rgba(43, 43, 56, 0.2) 0px 7px 29px 0px;
+  input {
+    min-width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  textarea {
+    min-width: 95%;
+    padding: 2.3em;
+  }
+}

@@ -1,0 +1,44 @@
+.sectors-container {
+    padding: 20px;
+  }
+  .sectors-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    display: flex;
+    align-self: center;
+
+  }
+  .sector_title{
+    font-size: 1.5em;
+    font-weight: 600;
+    color:#5FA3D4 ;
+    
+
+  }
+  .subsect_title{
+    font-size: 1.5em;
+    font-weight: 600;
+    color:#1e6aa0 ;
+  }
+  .sector-card{
+    width: 35%;
+    max-height: 20%;
+    padding: 1.3em;
+    color:#1e6aa0 ;
+    line-height: 2em;
+    font-family: lato;
+    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+  
+  }
+  .sector-card:hover .sector-description {
+    height: auto; 
+    overflow: visible;
+  }
+  .sector-description {
+    height: 10em; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+  }

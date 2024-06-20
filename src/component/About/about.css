@@ -1,0 +1,88 @@
+/* about.css */
+.about_us_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10em;
+  gap: 4em;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+.about_us {
+  max-width: 30%;
+  text-align: justify;
+  /* box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38); */
+  padding: 3em;
+}
+.vision {
+  min-width: 50%;
+  span {
+    font-weight: 600;
+  }
+  p {
+    text-align: justify;
+    color: rgb(30, 67, 116);
+  }
+}
+.mission_vision {
+  max-width: 50%;
+  display: flex;
+  gap: 3em;
+}
+.mission {
+  text-align: justify;
+  min-width: 70%;
+  border-right: solid rgb(30, 67, 116);
+  padding-right: 3em;
+  p {
+    color: rgb(30, 67, 116);
+  }
+}
+.mission_title {
+  color: rgb(152, 233, 186);
+  font-weight: 600;
+}
+.about {
+  border-bottom: solid black;
+  min-width: 100%;
+}
+.about_title {
+  font-size: 1.3em;
+  color: #1e6aa0;
+  font-weight: 600;
+}
+.about_description {
+  font-size: 1em;
+  color: #1e6aa0;
+  line-height: 1.5em;
+}
+.sectors {
+  line-height: 2em;
+  span {
+    color: #1e6aa0;
+  }
+}
+li {
+  list-style-type: "👉";
+  padding-inline-start: 1ch;
+  color: #1e6aa0;
+}
+.sectors{
+  color: #1e6aa0;
+  font-weight: 600;
+}
+.objectives_sect {
+  span {
+    color: #1e6aa0;
+    font-weight: 600;
+  }
+  li {
+    font-size: 1em;
+    /* line-height: 1em;
+    text-align: justify; */
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23808"><g transform="scale(0.5) translate(0, 15)" transform-origin="center"><path d="M18 4c-4-1-6 3-6 3s-2-4-6-3-4 6-2 8l8 8 8-8c2-2 2-7-2-8z"></path></g></svg>');
+  }
+  li::marker {
+    font-size: 3em;
+  }
+}

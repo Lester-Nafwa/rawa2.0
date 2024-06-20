@@ -1,0 +1,48 @@
+.footer_sect {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+ background-color:  #0F7BC0;
+  box-shadow: #64646f33 0px 7px 29px 0px;
+  padding: 5em;
+  padding-left: 12em;
+  padding-right: 5em;
+  position: relative;
+  align-content: center;
+  justify-self: center;
+  align-items: center;
+  margin-top: 0.5em;
+  color: white;
+}
+.footer_items {
+  display: flex;
+  font-size: medium;
+  justify-content: space-around;
+}
+.logo_design {
+  min-width: 5em;
+  height: 5em;
+  /* border-radius: 3em; */
+  padding: 0.8em;
+}
+.mini_about {
+  max-width: 30%;
+}
+.tel_sect {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+ .footer_text{
+  margin:0;
+  font-size: 0.8em;
+ }
+ .contacts{
+font-weight: 600;
+font-size: 1.4em;
+ }
+ hr{
+
+  border: solid rgb(229, 235, 238);
+  width: 90%;
+ }
