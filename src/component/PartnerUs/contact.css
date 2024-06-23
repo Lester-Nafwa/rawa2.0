@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-content: center;
   gap: 4em;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   margin: 0 auto;
   /* background: #9e9f9f; */
   box-shadow: rgba(222, 222, 227, 0.2) 0px 7px 29px 0px;

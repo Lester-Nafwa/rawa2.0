@@ -3,13 +3,14 @@
   display: flex;
   justify-content: center; /* Horizontally center content */
   align-items: center; /* Vertically center content */
-  padding: 3em;
-  margin-left: 10em; /* Adjust margin-left as needed */
+  padding: 3em; /* Adjust margin-left as needed */
+  justify-items: center;
+  margin: 0 auto;
   gap: 4em;
   background-color: #f9f9f9;
-  max-width: 100%;
-  max-height: 100%;
-  /* background: url('rawa_logos.jpg');   */
+  /* max-width: 90%; */
+  max-height: 80%;
+ background: url("/public/rawa_logos.jpg") ;   
   background-size: cover; 
   background-position: center; 
 }
@@ -73,12 +74,13 @@
   font-weight: 600;
 }
 .about_description {
-  font-size: 1em;
-  color: #1e6aa0;
+  font-size: 1.2em;
+  color: #062d49;
   line-height: 1.5em;
+
 }
 .sectors {
-  line-height: 2em;
+  line-height: 2.3em;
   span {
     color: #1e6aa0;
   }
@@ -89,18 +91,18 @@ li {
   color: #1e6aa0;
 }
 .sectors{
-  color: #1e6aa0;
+  color: #c2c9ce;
   font-weight: 600;
 }
 .objectives_sect {
   span {
-    color: #1e6aa0;
+    color: #e1eaf0;
     font-weight: 600;
+
   }
   li {
-    font-size: 1em;
-    /* line-height: 1em;
-    text-align: justify; */
+    font-size: 1.2em;
+    color: #0a151c;
     list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23808"><g transform="scale(0.5) translate(0, 15)" transform-origin="center"><path d="M18 4c-4-1-6 3-6 3s-2-4-6-3-4 6-2 8l8 8 8-8c2-2 2-7-2-8z"></path></g></svg>');
   }
   li::marker {

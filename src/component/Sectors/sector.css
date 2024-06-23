@@ -52,10 +52,12 @@ justify-content: center;
 justify-items: center;
 align-content: center;
 max-width: 80%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 gap: 8em;
-background-color: rgb(228, 223, 223);
+background: linear-gradient(to right,white, #e8ebec);
 margin: 0 auto;
 padding: 3em;
+min-height: 100%;
 
 }
 .list_sections{
