@@ -1,5 +1,31 @@
 .partners_list {
-margin-top: 2em;
-  background-size: cover;
-  min-height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.partner-card {
+  width: 20%;
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.partner-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.partner-image {
+width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+.partner_header{
+  text-align: center;
+  color: rgb(224, 141, 33);
 }

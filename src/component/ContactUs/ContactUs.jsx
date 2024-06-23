@@ -1,9 +1,11 @@
 import "./contactme.css";
+import ContactTemplate from ".";
 const ContactUs = () => {
-  const randomColors=['#2c5131','#755100','#646970','#c5d9ed']
-  const getRandomColor = () => randomColors[Math.floor(Math.random() * randomColors.length)];
+  
   return (
+
     <div className="main_contact_sect">
+      <ContactTemplate/>
       <div class="contact-image">
         <img src="/rocket-contact.png" alt="rocket_contact" />
       </div>
@@ -51,11 +53,7 @@ const ContactUs = () => {
           </div>
         </div>
       </form>
-      <div className="contactperson"  >
-        <div className="contact_sect" style={{ backgroundColor: getRandomColor() }}><div><img src="/map_24dp.svg" alt="maps"/></div><span>Mogadishu Somalia</span> </div>
-        <div className="contact_sect" style={{ backgroundColor: getRandomColor() }}><div><img src="/contact_mail_24dp.svg" alt="emails"/></div> <span> rawasad@gmail.com</span></div>
-        <div className="contact_sect"style={{ backgroundColor: getRandomColor() }}><div><img src="/dialpad_24dp.png" alt="phone number" style={{height:"1.5em",width:'2em'}}/></div><span> +252612863388</span></div>
-      </div>
+      
     </div>
   );
 };

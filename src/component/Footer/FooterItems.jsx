@@ -28,7 +28,7 @@ const ItemsContainer = () => {
             <TfiEmail />{" "}
           </div>
           <div>
-            <p>Email: rawasad@gmail.com</p>
+            <p>Email:info@rawa.org.so</p>
           </div>
         </div>
         <div className="tel_sect">

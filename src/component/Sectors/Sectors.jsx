@@ -1,6 +1,9 @@
+ // Sectors.js
 import React from 'react';
 import { sectors } from '../../Utils/Menu';
 import './sector.css';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Sectors = () => {
   const colors = ['#6991c7', '#253A6E', '#5FA3D4', 'lightgreen', '#a3bded'];
@@ -8,14 +11,21 @@ const Sectors = () => {
 
   return (
     <div className="sectors-container">
-      <div>
-        <span className="sector_title">Sectors We Serve</span>
-      </div>
       <div className="sectors-flex">
         {sectors.map((sector, index) => (
-          <div key={index} className="sector-card" style={{ backgroundColor: getRandomColor() }}>
-            <span className="subsect_title">{sector.name}</span>
-            <p>{sector.description}</p>
+          <div 
+            key={index} 
+            className="sector-card" 
+            style={{ backgroundImage: `url(${sector.image})`, backgroundColor: getRandomColor() }}
+          >
+            <div className="sector-content">
+              <Link to={`/sectors/${sector.href}`} className="sector-link">
+                <span className="subsect_title">{sector.name}</span>
+                <div className="read_btn">
+                  <Button className='btn_read'>Read</Button>
+                </div>
+              </Link>
+            </div>
           </div>
         ))}
       </div>

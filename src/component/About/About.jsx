@@ -66,15 +66,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="sectors">
-          <span>Sectors</span>
-        </div>
-        <li>Education</li>
-        <li>Capacity Building</li>
-        <li>Knowledge & Awareness</li>
-        <li>Youth and Women Emporment Programs</li>
-        <li>Health, Nutrition, Water and Sanitation</li>
-        <li>Research</li>
       </div>
     </div>
   );
