@@ -1,29 +1,30 @@
- name: 🚀 Deploy website on push
+name: Deploy to cPanel
 
-on: 
+on:
   push:
     branches:
       - main
 
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: 🚚 Get latest code
+      - name: Checkout Code 🚚
         uses: actions/checkout@v3
 
-      - name: Use Node.js 16
+      - name: Setup Node.js 🔧
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '16.x'  # Use a single Node.js version for testing
 
-      - name: 🔨 Build Project
-        run: |
-          npm install
-          npm run build
+      - name: Install Dependencies 📦
+        run: npm install
 
-      - name: 📂 Sync files
+      - name: Build React App 🏗️
+        run: npm run build
+
+      - name: Upload to cPanel 📂
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_G }}
@@ -36,3 +37,4 @@ jobs:
             **/.git*/**
             **/node_modules/**
             **/.**
+
