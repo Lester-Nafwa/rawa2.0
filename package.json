@@ -1,5 +1,6 @@
 {
   "name": "rawa2.0",
+  "homepage":"https://rawa.org.so/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
