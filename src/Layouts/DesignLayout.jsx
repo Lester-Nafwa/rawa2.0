@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState }from "react";
 import moment from "moment";
 import { Outlet } from "react-router-dom";
 import { Container, Navbar, Nav } from "react-bootstrap";
@@ -9,19 +9,29 @@ import "../component/Footer/footer.css";
 import "../component/Nav/navbar.css";
 import '../component/Carrosel/CarouselComponent.css';
 import { navItems } from "../Utils/Menu";
-
-import { useState } from "react";
+import { RxDropdownMenu } from "react-icons/rx";
+import { useNavigate } from "react-router-dom";
+ 
 
 const DesignLayout = () => {
   const today = moment().format("YYYY");
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [openNav, setOpenNav] = useState(false);
+  const navigate = useNavigate();
 
   const slides = [
     { type: 'video', src: '/reliance.mp4' },
     { type: 'image', src: '/Strengthen Local Capacities_banner.png'},
     { type: 'video', src: '/community.mp4', }
   ];
-
+  const handleNavClick = (href) => {
+    if (href === "/our-work") {
+      navigate("/sectors/research");
+    } else {
+      navigate(href);
+    }
+    // setOpenNav(false);
+  };
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
@@ -51,8 +61,24 @@ const DesignLayout = () => {
                 ))}
       
             </div>
+            <div className="dropdown_icon_container">
+            <RxDropdownMenu className="dropdown_icon" onClick={() => setOpenNav(!openNav)} />
+          </div>
           </div>
         </Container>
+        {openNav && (
+        <div className="mobile_nav">
+          {navItems.map((item, index) => (
+            <Nav.Link
+              key={index}
+              className={item.className}
+              onClick={() => handleNavClick(item.href)}
+            >
+              {item.label}
+            </Nav.Link>
+          ))}
+        </div>
+      )}
       </Navbar>
       <div className='main_slide'>
     <div className="slideshow-container">

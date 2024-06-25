@@ -28,7 +28,8 @@
   font-weight: 600;
   border-bottom: solid rgb(119, 115, 115) 3em;
   max-width: 20%;
-  padding-left: 20em;
+  /* padding-left: 20em; */
+  text-align: center;
 }
 .about_us {
   max-width: 30%;
@@ -38,9 +39,6 @@
 }
 .vision {
   min-width: 50%;
-  span {
-    font-weight: 600;
-  }
   p {
     text-align: justify;
     color: rgb(30, 67, 116);
@@ -74,13 +72,13 @@
   font-weight: 600;
 }
 .about_description {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #062d49;
-  line-height: 1.5em;
+  line-height: 1.4em;
 
 }
 .sectors {
-  line-height: 2.3em;
+  line-height: zem;
   span {
     color: #1e6aa0;
   }
@@ -101,11 +99,27 @@ li {
 
   }
   li {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #0a151c;
     list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23808"><g transform="scale(0.5) translate(0, 15)" transform-origin="center"><path d="M18 4c-4-1-6 3-6 3s-2-4-6-3-4 6-2 8l8 8 8-8c2-2 2-7-2-8z"></path></g></svg>');
   }
   li::marker {
     font-size: 3em;
+  }
+}
+@media screen and (max-width:900px) {
+  .intro_title{
+text-align: center;
+font-size: 0.9em;
+max-width: 100%;
+  }
+  
+}
+@media screen and (max-width:800px) {
+  .about_us_container{
+    flex-direction: column;
+  }
+  .about_us {
+    min-width: 100%;
   }
 }

@@ -91,3 +91,24 @@ h3{
 .input_details {
   max-width: 100%;
 }
+@media screen and (max-width:1100px){
+  .form_details{
+    min-width: 100%;
+
+  }
+  .main_contact_sect{
+    max-width: 90%;
+  }
+}
+@media screen and (max-width:850px) {
+  .contactperson{
+    flex-direction: column;
+  }
+  
+}
+@media screen and (max-width:550px) {
+ 
+  .row{
+    flex-direction: column;
+  }
+}

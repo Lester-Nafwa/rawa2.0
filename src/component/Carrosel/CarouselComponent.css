@@ -92,3 +92,9 @@
 .dot:hover {
   background-color: #717171;
 }
+@media screen and (max-width:1200px) {
+  .main_slide{
+   padding-top:4em
+  }
+  
+}

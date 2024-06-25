@@ -1,5 +1,6 @@
 import "./contact.css";
 import Button from "../Button/Button";
+
 const PartnerWithUs = () => {
   return (
     <div className="contact_us">
@@ -7,23 +8,23 @@ const PartnerWithUs = () => {
         <span className="partnership_titles">Want to Partner With Us?</span>
         <p>
           By donating to RAWA, you are supporting vulnerable groups including
-          woman and youth with improved livehoods and access to basic utilities
-          Water, Sanitation, and Health facilities. the Funds will also
-          facilitate in capacity buiding of key public institutions icluding in
-          education sector. Your kind gift will fund vital projects like these,
+          women and youth with improved livelihoods and access to basic utilities
+          Water, Sanitation, and Health facilities. The Funds will also
+          facilitate in capacity building of key public institutions including in
+          the education sector. Your kind gift will fund vital projects like these,
           making a real difference in helping people build safer lives. 88% of
           your donation goes to RAWA's projects; the rest is used for our core
           costs – which includes our communications, supporting learning from
           our programming across the organisation and raising further
           much-needed income for our work. If you would like to contact us
           directly about supporting RAWA, please give us a call at<span className="contactss">  +252612863388</span>
-          &nbsp; or send us an email at<span className="contactss"> info@rawa.org.so or sayid@rawa.org.so</span> 
+          &nbsp; or send us an email at<span className="contactss"> info@rawa.org.so or sayid@rawa.org.so</span>
         </p>
       </div>
       <div>
         <form className="contact_details">
           <div><h3>Contact Details</h3></div>
-          <div>
+          <div className="input_group">
             <div>
               <input type="text" placeholder="Enter Your Name" />
             </div>
@@ -31,7 +32,7 @@ const PartnerWithUs = () => {
               <input type="email" placeholder="Enter Your Email" />
             </div>
           </div>
-          <div>
+          <div className="input_group">
             <div>
               <input type="text" placeholder="Enter Phone Number" />
             </div>
@@ -40,7 +41,7 @@ const PartnerWithUs = () => {
             </div>
           </div>
           <div>
-            <textarea type="comment" rows="7" cols="50" />
+            <textarea type="comment" rows="7" cols="50" placeholder="Your Message" />
           </div>
           <Button>Submit</Button>
         </form>
@@ -48,4 +49,5 @@ const PartnerWithUs = () => {
     </div>
   );
 };
+
 export default PartnerWithUs;

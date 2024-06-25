@@ -43,7 +43,7 @@ const DynamicSectors = () => {
         <div>
           <span className="title_details">{sector.name}</span>
         </div>
-        <div>
+        <div className="">
           <ul>
             {sector.items.map((item, idx) => (
               <li key={idx} className="items_details">

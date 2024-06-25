@@ -1,14 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { RxDropdownMenu } from "react-icons/rx";
 import "./navbar.css";
 import { navItems } from "../../Utils/Menu";
 
 const HeaderNav = () => {
   const navigate = useNavigate();
+  const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
-    // Redirect to /sectors/research on initial render if the path is /our-work
     if (window.location.pathname === "/our-work") {
       navigate("/sectors/research");
     }
@@ -20,6 +21,7 @@ const HeaderNav = () => {
     } else {
       navigate(href);
     }
+    // setOpenNav(false);
   };
 
   return (
@@ -28,6 +30,9 @@ const HeaderNav = () => {
         <div className="container_main">
           <div>
             <img src="/rawa_logos.png" alt="updated logo" className="updated_logo" />
+          </div>
+          <div className="dropdown_icon_container">
+            <RxDropdownMenu className="dropdown_icon" onClick={() => setOpenNav(!openNav)} />
           </div>
           <div className="navHeader">
             {navItems.map((item, index) => (
@@ -42,6 +47,19 @@ const HeaderNav = () => {
           </div>
         </div>
       </Container>
+      {openNav && (
+        <div className="mobile_nav">
+          {navItems.map((item, index) => (
+            <Nav.Link
+              key={index}
+              className={item.className}
+              onClick={() => handleNavClick(item.href)}
+            >
+              {item.label}
+            </Nav.Link>
+          ))}
+        </div>
+      )}
     </Navbar>
   );
 }

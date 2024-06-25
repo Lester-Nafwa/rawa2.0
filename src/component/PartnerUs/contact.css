@@ -5,49 +5,115 @@
   justify-content: space-between;
   align-content: center;
   gap: 4em;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  margin: 0 auto;
-  /* background: #9e9f9f; */
   box-shadow: rgba(222, 222, 227, 0.2) 0px 7px 29px 0px;
   max-width: 70%;
-  opacity: 80%;
+  opacity: 0.8;
+  margin: 0 auto;
 }
-.contact_title{
- margin-top: 7em;
- text-align: justify;
- max-width: 60%;
- color: rgb(16, 10, 10);
- line-height: 1.8em;
- /* font-size: 2em; */
+
+.contact_title {
+  margin-top: 7em;
+  text-align: justify;
+  max-width: 60%;
+  color: rgb(16, 10, 10);
+  line-height: 1.8em;
 }
+
 .contact_details {
   border-radius: 0.5em;
-  /* min-width: 100%; */
   background-color: white;
-  padding-right: 5em;
-  padding-top: 2em;
-  padding-left: 3em;
-  padding-bottom: 2em;
+  padding: 2em;
   border: solid grey;
-  align-items: center;
   box-shadow: rgba(43, 43, 56, 0.2) 0px 7px 29px 0px;
-  input {
-    min-width: 100%;
-    padding: 1em;
-    margin-bottom: 1em;
-  }
-  textarea {
-    min-width: 95%;
-    padding: 2.3em;
-  }
+  width: 100%;
+  max-width: 500px; /* Adjust max-width as needed */
 }
-.partnership_titles{
+
+.contact_details input {
+  width: calc(100% - 2em); /* Adjust input width with padding */
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.contact_details textarea {
+  width: calc(100% - 2em); /* Adjust textarea width with padding */
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.partnership_titles {
   font-size: 1.4em;
   color: rgb(4, 64, 74);
   font-weight: 600;
-
 }
-.contactss{
+
+.contactss {
   color: brown;
   font-size: 1em;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .contact_us {
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    gap: 2em;
+  }
+  
+  .contact_title {
+    margin-top: 3em;
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .contact_details {
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact_us {
+    padding: 1.5em;
+    gap: 1.5em;
+  }
+
+  .contact_title {
+    margin-top: 2em;
+    max-width: 90%;
+    font-size: 1.2em;
+  }
+
+  .contact_details {
+    padding: 1em;
+  }
+
+  .contact_details input,
+  .contact_details textarea {
+    width: calc(100% - 1em);
+    padding: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact_us {
+    padding: 1em;
+    gap: 1em;
+  }
+
+  .contact_title {
+    margin-top: 1em;
+    max-width: 100%;
+    font-size: 1em;
+  }
+
+  .contact_details {
+    padding: 0.8em;
+  }
+
+  .contact_details input,
+  .contact_details textarea {
+    width: 100%;
+    padding: 0.5em;
+  }
 }

@@ -63,6 +63,7 @@ min-height: 100%;
 .list_sections{
   span{
     color: #8aa01e;
+    margin-left: 2em;
   }
 }
 .sector-card:hover .subsect_title {
@@ -73,7 +74,7 @@ min-height: 100%;
   height: 30vh;
   span{
     color: #8aa01e;
-margin-left: 2em;
+    margin-left: 2em;
   }
 }
 .btn_read {
@@ -137,8 +138,39 @@ height: 30vh;
 :hover.categories_details{
   color: rgb(15, 187, 130);
 }
+@media screen and (max-width:1300px) {
+  .items_details{
+    line-height: 1.5em;
+    min-width: 100%;
+  }
+  .main-sections{
+    max-width: 90%;
+    min-height: 80vh;
+    padding: 0.5em;
+    gap: 2em;
+  }
+}
 @media (max-width: 768px) {
   .sector-card {
     width: 100%;
   }
+  .main-sections{
+    flex-direction: column;
+    gap:2em;
+    max-width: 100%;
+  }
+  .items_details{
+    max-width: 100%;
+  }
+  .details_sector{
+    min-width: 100%;
+  }
+}
+@media screen and (max-width:550px){
+  .main-sections{
+    /* gap:3em; */
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
