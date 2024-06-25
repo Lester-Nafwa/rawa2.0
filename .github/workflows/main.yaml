@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js 🔧
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'  # Use a single Node.js version for testing
+          node-version: '16.x'  
 
       - name: Install Dependencies 📦
         run: npm install
