@@ -3,7 +3,7 @@
 on:
   push:
     branches:
-      - main
+    - main
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js 🔧
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'  
+          node-version: '16.x'
 
       - name: Install Dependencies 📦
         run: npm install
@@ -27,10 +27,10 @@ jobs:
       - name: Upload to cPanel 📂
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.GIT_CPANEL_REACT_SERVER}}
-          username: ${{ secrets.GIT_CPANEL_REACT_USER}}
-          password: ${{ secrets.GIT_CPANEL_REACT_PWD}}
-          protocol: ${{ secrets.GIT_CPANEL_REACT_PROTOCOL}}
+          server: ${{ secrets.GIT_CPANEL_REACT_SERVER }}
+          username: ${{ secrets.GIT_CPANEL_REACT_USER }}
+          password: ${{ secrets.GIT_CPANEL_REACT_PWD }}
+          protocol: ${{ secrets.GIT_CPANEL_REACT_PROTOCOL }}
           local-dir: ./build/
           exclude: |
             **/.git**
