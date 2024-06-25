@@ -9,6 +9,7 @@ import {
   RouterProvider,
   createRoutesFromElements,
   createBrowserRouter,
+  Navigate
 } from "react-router-dom";
 import DesignLayout from "./Layouts/DesignLayout";
 import ContactUs from "./component/ContactUs/ContactUs";
@@ -19,7 +20,8 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
-        <Route path="/" element={<DesignLayout />}>
+        <Route path="/" replace element={<DesignLayout />}>
+        <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="about" element={<About />} />
           <Route path="contacts" element={<ContactUs />} />
           <Route path="partnerships" element={<PartnerWithUs />} />
