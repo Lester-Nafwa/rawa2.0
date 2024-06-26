@@ -15,10 +15,10 @@ function App() {
         <Route path="/" element={<DesignLayout />}>
           <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="about" element={<About />} />
-          <Route path="contacts" element={<ContactUs />} />
-          <Route path="partnerships" element={<PartnerWithUs />} />
-          <Route path="sectors" element={<Sectors />} />
-          <Route path="sectors/:id" element={<DynamicSectors />} />
+          <Route path="/contacts" element={<ContactUs />} />
+          <Route path="/partnerships" element={<PartnerWithUs />} />
+          <Route path="/sectors" element={<Sectors />} />
+          <Route path="/sectors/:id" element={<DynamicSectors />} />
           <Route path="/our-work" element={<DynamicSectors />} />
           <Route path="/our-work/:id" element={<DynamicSectors />} />
         </Route>
