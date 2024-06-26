@@ -23,6 +23,10 @@ function App() {
           <Route path="/our-work/:id" element={<DynamicSectors />} />
         </Route>
         <Route path="/home" element={<DashboardLayout />} />
+        <Route path="about" element={<About />} />
+          <Route path="/contacts" element={<ContactUs />} />
+          <Route path="/partnerships" element={<PartnerWithUs />} />
+          <Route path="/sectors" element={<Sectors />} />
       </>
     )
   );
