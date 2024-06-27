@@ -94,7 +94,7 @@ li {
 }
 .objectives_sect {
   span {
-    color: #e1eaf0;
+    color: #052c0b;
     font-weight: 600;
 
   }
@@ -118,8 +118,19 @@ max-width: 100%;
 @media screen and (max-width:800px) {
   .about_us_container{
     flex-direction: column;
+    gap: 0.4em;
   }
   .about_us {
+    min-width: 100%;
+  }
+  .mission_vision{
+    flex-direction: column;
+    min-width: 100%;
+    gap: 1em;
+    
+  }
+  .mission{
+    border: none;
     min-width: 100%;
   }
 }
