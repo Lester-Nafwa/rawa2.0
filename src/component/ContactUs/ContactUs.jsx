@@ -37,8 +37,7 @@ const ContactUs = () => {
               placeholder="Your Phone Number *"
               required
             />
-            <br />
-            <input type="submit" name="btnSubmit" className="btnContact" />
+            
           </div>
           <div className="col-md-6">
             <div className="form-group">
@@ -51,7 +50,11 @@ const ContactUs = () => {
               ></textarea>
             </div>
           </div>
+          
+        
         </div>
+        <div className="btnSubmit_type">  
+        <button type="submit" name="btnSubmit" className="btnContact" >Submit</button></div>
       </form>
       
     </div>

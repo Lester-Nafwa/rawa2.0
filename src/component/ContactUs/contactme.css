@@ -18,6 +18,12 @@
 .contact-form {
   border-radius: 1rem;
 }
+.btnSubmit_type{
+  min-width: 10%;
+ align-self: left;
+ float: left;
+
+}
 .form-control {
   min-width: 100%;
   margin-bottom: 2em;
