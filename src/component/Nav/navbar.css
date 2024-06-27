@@ -116,7 +116,9 @@
   .container_main {
     max-width: 100%;
   }
- 
+ .updated_logo {
+  display: inline;
+}
   .dropdown_icon_container {
     display: inline;
   }
@@ -124,11 +126,18 @@
   .dropdown_icon {
     font-size: 3em;
   }
-  .mobile_nav{
+  .mobile_nav {
     background-color: whitesmoke;
     max-width: 60%;
     z-index: 999;
+    box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    right: 0;
+    margin-top: 1.4em;
+    margin-left: auto;
+    margin-right: 20px; /* Adjust as needed */
   }
+  
 
   .updated_logo {
     max-width: 10%;

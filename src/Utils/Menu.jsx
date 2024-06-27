@@ -64,7 +64,7 @@ export const sectors = [
     ]
   },
   {
-    image: '/education.png',
+    image: '/education_update.jpg',
     href: 'education',
     name: "Education",
     items: [
