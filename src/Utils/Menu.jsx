@@ -75,7 +75,7 @@ export const sectors = [
     ]
   },
   {
-    image: '/capacity-building.jpg',
+    image: '/capacity_building.jpg',
     href: "capacity-building",
     name: "Capacity Building",
     items: [
