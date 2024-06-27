@@ -118,6 +118,9 @@ h3{
   }
 }
 @media screen and (max-width:550px) {
+  .contactperson{
+  margin-top: 8em;
+  }
  
   .row{
     flex-direction: column;

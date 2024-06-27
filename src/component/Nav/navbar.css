@@ -118,6 +118,8 @@
   }
  .updated_logo {
   display: inline;
+  max-width: 10%;
+  margin-left: -7em;
 }
   .dropdown_icon_container {
     display: inline;
@@ -137,14 +139,13 @@
     margin-left: auto;
     margin-right: 20px; /* Adjust as needed */
   }
-  
-
-  .updated_logo {
-    max-width: 10%;
-    margin-left: -7em;
-  }
-
   .navHeader {
     display: none;
   }
+}
+@media screen and (max-width:500px){
+  .updated_logo {
+    margin-left: -5em;
+  }
+  
 }

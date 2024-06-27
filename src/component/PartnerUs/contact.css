@@ -99,6 +99,7 @@
   .contact_us {
     padding: 1em;
     gap: 1em;
+    margin-top: 5em;
   }
 
   .contact_title {
@@ -109,11 +110,15 @@
 
   .contact_details {
     padding: 0.8em;
+    width: 100%;
   }
 
-  .contact_details input,
-  .contact_details textarea {
-    width: 100%;
-    padding: 0.5em;
+  .contact_details  {
+    input
+   { max-width: 90%;}
+
+  }
+  .comments_area{
+    max-width: 90%;
   }
 }

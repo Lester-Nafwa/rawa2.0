@@ -98,3 +98,9 @@
   }
   
 }
+@media screen and (max-width:800px){
+  .main_slide{
+    display: none;
+  }
+  
+}

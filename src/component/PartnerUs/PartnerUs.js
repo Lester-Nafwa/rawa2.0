@@ -41,7 +41,7 @@ const PartnerWithUs = () => {
             </div>
           </div>
           <div>
-            <textarea type="comment" rows="7" cols="50" placeholder="Your Message" />
+            <textarea type="comment" rows="7" cols="50" placeholder="Your Message" className="comments_area" />
           </div>
           <Button>Submit</Button>
         </form>
