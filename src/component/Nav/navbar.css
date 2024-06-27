@@ -124,6 +124,11 @@
   .dropdown_icon {
     font-size: 3em;
   }
+  .mobile_nav{
+    background-color: whitesmoke;
+    max-width: 60%;
+    z-index: 999;
+  }
 
   .updated_logo {
     max-width: 10%;
