@@ -93,7 +93,7 @@ export const navItems = [
   { href: "/about", label: "Who We Are", className: "tab_details" },
   { href: "/our-work", label: "What We Do", className: "tab_details" },
   { href: "/contacts", label: "Contact Us", className: "tab_details" },
-  { href: "#", label: "Resourses", className: "tab_details" },
+  { href: "#", label: "Resources", className: "tab_details" },
   { href: "/partnerships", label: "Donate", className: "tab_details_donate" }
 ];
 export const sections = [
