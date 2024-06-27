@@ -110,7 +110,12 @@ h3{
   .contactperson{
     flex-direction: column;
   }
+  .btnSubmit_type{
+    min-width:50%;
+   align-self: left;
+   float: left;
   
+  }
 }
 @media screen and (max-width:550px) {
  
