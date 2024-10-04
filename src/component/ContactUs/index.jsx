@@ -35,7 +35,7 @@ const ContactTemplate = () => {
             style={{ height: "1.5em", width: "2em" }}
           />
         </div>
-        <span> +252612863388</span>
+        <span> +252618608560</span>
       </div>
     </div>
   );

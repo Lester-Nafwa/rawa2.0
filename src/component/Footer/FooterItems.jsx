@@ -38,7 +38,7 @@ const ItemsContainer = () => {
           </div>{" "}
           <div>
             {" "}
-            <p>Tel No:+252612863388</p>
+            <p>Tel No:+252618608560</p>
           </div>
         </div>
       </div>

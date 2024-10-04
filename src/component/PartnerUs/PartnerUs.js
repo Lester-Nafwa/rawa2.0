@@ -17,7 +17,7 @@ const PartnerWithUs = () => {
           costs – which includes our communications, supporting learning from
           our programming across the organisation and raising further
           much-needed income for our work. If you would like to contact us
-          directly about supporting RAWA, please give us a call at<span className="contactss">  +252612863388</span>
+          directly about supporting RAWA, please give us a call at<span className="contactss">  +252618608560</span>
           &nbsp; or send us an email at<span className="contactss"> info@rawa.org.so or sayid@rawa.org.so</span>
         </p>
       </div>
