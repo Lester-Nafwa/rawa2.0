@@ -35,6 +35,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME}}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          dangerous: true
-          local-dir: ./dist
+          dangerous-clean-slate: true 
+          local-dir: ./dist/
+          server-dir: /home/rawaorgs/public_html/
     
