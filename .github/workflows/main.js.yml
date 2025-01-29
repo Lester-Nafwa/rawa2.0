@@ -35,6 +35,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME}}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-    - name: Debug FTP Deployment
-    - run: echo "Deploying to ${{ secrets.FTP_SERVER }} in directory /home/rawaorgs/public_html/"
-
+          dangerous: true
+          local-dir: ./dist
+    
