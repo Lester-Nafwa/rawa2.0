@@ -36,6 +36,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           dangerous-clean-slate: true 
-          local-dir: ./build
+          local-dir: ./build/
           server-dir: /home/rawaorgs/public_html/
     
