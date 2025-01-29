@@ -49,8 +49,8 @@
 }
 
 .updated_logo {
-  max-height: 7em;
-  min-width: 10em;
+  height: 12vh;
+  width: 90%;
 }
 
 .dropdown_icon_container {
@@ -86,9 +86,7 @@
     justify-content: center;
   }
 
-  .updated_logo {
-    height: 10%;
-  }
+
 
   .tab_details {
     min-width: 5em;
