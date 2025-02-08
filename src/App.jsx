@@ -7,6 +7,7 @@ import { Route, RouterProvider, createRoutesFromElements, createBrowserRouter, N
 import DesignLayout from "./Layouts/DesignLayout";
 import ContactUs from "./component/ContactUs/ContactUs";
 import Sectors from "./component/Sectors/Sectors";
+import Resources from "./component/Resources";
 
 function App() {
   const router = createBrowserRouter(
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="about" element={<About />} />
           <Route path="/contacts" element={<ContactUs />} />
+          <Route path="/resources" element={<Resources />} />
           <Route path="/partnerships" element={<PartnerWithUs />} />
           <Route path="/sectors" element={<Sectors />} />
           <Route path="/sectors/:id" element={<DynamicSectors />} />
