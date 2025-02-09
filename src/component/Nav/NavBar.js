@@ -28,7 +28,7 @@ const HeaderNav = () => {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <div className="container_main">
-          <div>
+          <div className="co_logo">
             <img src="/rawa_logos.png" alt="updated logo" className="updated_logo" />
           </div>
           <div className="dropdown_icon_container">

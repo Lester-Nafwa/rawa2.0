@@ -5,6 +5,7 @@ import HeaderNav from "../Nav/NavBar";
 import Partner from "../Partner/Partners";
 import "./dashboard.css";
 import Intro from "../About/intro";
+import News from "../News";
 const DashboardLayout = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const DashboardLayout = () => {
           <Intro />
           <Sectors />
           <Partner />
+          <News/>
           <Footer />
         </div>
       </div>

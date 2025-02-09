@@ -164,3 +164,40 @@ max-width: 100%;
     min-width: 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  .about_content_sub_container {
+    flex-direction: column;
+    gap: 1em;
+    max-width: 90%;
+   
+  }
+  .about{
+max-width: 100%;
+margin-left: 0 auto;
+  }
+  .about_us_container{
+    flex-direction: column;
+    display: flex;
+    margin-top: 5em;
+    max-width: 100%;
+  }
+  .about_image_container{
+    max-width: 90%;
+  }
+  .about_nav{
+    max-width: 100%;
+  }
+  .about_us{
+    max-width: 100%;
+  }
+  .about_description {
+    font-size: 0.9em;
+    padding: 0.5em;
+    max-width: 100%;
+  }
+  .about_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

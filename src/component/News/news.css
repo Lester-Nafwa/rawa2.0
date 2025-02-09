@@ -1,0 +1,80 @@
+ /* Resources.css */
+
+/* Container Styling */
+.resources-container {
+    padding: 1.5rem;
+    max-width: 80rem;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .resources-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Marquee Card Styling */
+  .resources-card {
+    background-color: #eeeef6;
+    width: 20vw;
+    height: 25vh;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 3em;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .resources-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 6px 14px;
+  }
+  
+  /* Image */
+  .resources-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+  }
+  
+  /* Title Overlay */
+  .resources-title-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    z-index: 10;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .resources-card {
+      width: 80vw;
+      height: 35vh;
+      margin: 1em;
+    }
+  
+    .resources-title {
+      font-size: 1.5rem;
+    }
+  
+    .resources-title-overlay {
+      font-size: 0.9rem;
+      padding: 0.4em 0.8em;
+    }
+  }
+  

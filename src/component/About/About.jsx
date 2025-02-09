@@ -3,7 +3,6 @@ import { aboutData } from "../../Utils/About";
 import { useState } from "react";
 
 const About = () => {
-  // Default to "Who We Are" (index 0)
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
@@ -30,7 +29,7 @@ const About = () => {
               {aboutData[selectedIndex].title}
             </span>
             <div className="about_content_sub_container">
-              <div c >  
+              <div>
                 <img
                   src={aboutData[selectedIndex].Image}
                   alt={aboutData[selectedIndex].title}
