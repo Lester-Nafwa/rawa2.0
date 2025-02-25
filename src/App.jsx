@@ -8,6 +8,7 @@ import DesignLayout from "./Layouts/DesignLayout";
 import ContactUs from "./component/ContactUs/ContactUs";
 import Sectors from "./component/Sectors/Sectors";
 import Resources from "./component/Resources";
+import Tenders from "./component/Tender";
 
 function App() {
   const router = createBrowserRouter(
@@ -22,6 +23,7 @@ function App() {
           <Route path="/sectors" element={<Sectors />} />
           <Route path="/sectors/:id" element={<DynamicSectors />} />
           <Route path="/our-work" element={<DynamicSectors />} />
+          <Route path="/opportunities" element={<Tenders/>} />
           <Route path="/our-work/:id" element={<DynamicSectors />} />
         </Route>
         <Route path="/home" element={<DashboardLayout />} />

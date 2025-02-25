@@ -40,7 +40,13 @@ const ItemsContainer = () => {
             {" "}
             <p>Tel No:+252618608560</p>
           </div>
+          
         </div>
+        <div className="tel_sect">
+            <div className="careers">Careers and Opportunities</div>
+            &
+            <div className="careers">Tenders</div>
+          </div>
       </div>
     </div>
   );

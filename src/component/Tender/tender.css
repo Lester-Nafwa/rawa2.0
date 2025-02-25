@@ -1,0 +1,29 @@
+.tenders-main{
+    display: flex;
+justify-content: space-evenly;
+    max-width: 100%
+}
+.we_hiring{
+    width: 30em;
+    border-radius: 2em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.opportunities_list{
+    max-width: 60%;
+}
+.link_opportunities:hover {
+    cursor: pointer;
+    color: white;
+    max-width: fit-content;
+    background-color: rgb(146, 229, 146);
+    padding: 1em 2em; /* Adjusted for better spacing */
+    border-radius: 0.5em; /* Slightly reduced for a cleaner look */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+.link_opportunities{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+    max-width: fit-content;
+    padding: 1em;
+}
