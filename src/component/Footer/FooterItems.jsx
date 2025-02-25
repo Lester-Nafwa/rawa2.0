@@ -1,6 +1,7 @@
 import "./footer.css";
 import { TfiEmail } from "react-icons/tfi";
 import { FiVoicemail } from "react-icons/fi";
+import { Link } from "react-router-dom";
 const ItemsContainer = () => {
   return (
     <div className="footer_items">
@@ -40,13 +41,12 @@ const ItemsContainer = () => {
             {" "}
             <p>Tel No:+252618608560</p>
           </div>
-          
         </div>
         <div className="tel_sect">
+          <Link to="/opportunities">
             <div className="careers">Careers and Opportunities</div>
-            &
-            <div className="careers">Tenders</div>
-          </div>
+          </Link>
+        </div>
       </div>
     </div>
   );
