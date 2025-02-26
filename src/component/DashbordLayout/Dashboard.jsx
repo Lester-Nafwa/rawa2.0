@@ -12,7 +12,7 @@ const DashboardLayout = () => {
       <div>
         <div className="header">
           {" "}
-          <HeaderNav />
+          <HeaderNav/>
         </div>
         <div>
           <CarouselComponent />

@@ -228,10 +228,17 @@ export const galleryData = [
 ];
 export const availableOpportunities = [
   {
+    title: "REQUEST FOR TENDER: PROCUREMENT OF FURNITURE AND ECD MATERIALS",
+    issuedDate: "8th August 2024",
+    closingDate: "21st August 2024",
+    description: "RAWA invites eligible companies to submit bids for the supply of furniture and Early Childhood Development (ECD) materials. The selected suppliers will be responsible for providing high-quality items that meet RAWA’s operational and educational needs.",
+    link: "./Bid Notice for Furniture and ECD Materials.pdf",
+  },
+  {
     title: "REQUEST FOR TENDER: VEHICLE RENTAL SERVICES",
     issuedDate: "7th July 2024",
     closingDate: "18th July 2024",
     description: "RAWA invites eligible individuals and companies to submit bids for the provision of vehicle rental services for a period of 12 months. The selected service provider(s) will be responsible for providing well-maintained and roadworthy vehicles to support RAWA’s operational needs.",
     link: "./BID_NOTICE_RASAWAD-Advertisement.pdf",
-  },
+  }
 ];

@@ -5,7 +5,7 @@ const Tenders = () => {
     <>
       <div className="tenders-main">
         <div>
-          <h2>What to Work with Us</h2>
+          <h2>Want to Work with Us?</h2>
           <div>
             <img src="./we_are_hiring.jpg" className="we_hiring" />
           </div>
