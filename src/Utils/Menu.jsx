@@ -39,54 +39,69 @@ export const parterImage = [
   { image: "/UNOCHA_logo_horizontal_text_blue_RGB_1200x630.jpg" },
   { image: "/fgs.png" },
 ];
- 
-export const sectors = [
+ export const sectors = [
   {
-    image: '/reseach.png',
-    href: 'research',
-    name: "Research",
-    items: [
-      "Address humanitarian needs and conduct effective knowledge research.",
-      "Employ both quantitative methods, such as questionnaires, and qualitative approaches.",
-      "Focus Group Discussions (FGDs), Key Informant Interviews (KIIs), and document reviews.",
-      "Enhance the monitoring and evaluation process."
-    ]
+    icon: "📚",
+    image: "/reseach.png",
+    href: "research",
+    name: "Research Department",
+    summary:
+      "Our Research department drives evidence-based programming by conducting assessments, surveys, and evaluations that inform decision-making. By employing both quantitative and qualitative methods, we help humanitarian actors better understand the needs of affected communities and improve the design and delivery of aid.",
+    objectives: [
+      "Inform Programming: Use data-driven insights to guide humanitarian planning, design, and prioritization.",
+      "Ensure Accountability: Monitor project performance and impact using robust tools and feedback loops.",
+      "Strengthen Evidence Culture: Collaborate with academic partners to enhance the quality and utility of research outputs."
+    ],
+    actions:
+      "In Somalia, where data scarcity hampers aid efficiency, our research team carries out needs assessments, baseline studies, and real-time evaluations. We use community-based approaches—like focus groups and participatory mapping—to ensure that voices from all segments of society are heard. This empowers agencies to adapt programs, target vulnerable populations, and respond more effectively to crises on the ground."
   },
   {
-    image: '/wash.png',
-    href: 'wash',
-    name: "WASH Health, Nutrition, Water and Sanitation",
-    items: [
-      "Public Health Knowledge and awareness campaigns.",
-      "WASH facilities setup.",
-      "Food security awareness and consultancy.",
-      "Nutrition and health support."
-    ]
+    icon: "💧",
+    image: "/wash.png",
+    href: "wash",
+    name: "WASH, Health & Nutrition Department",
+    summary:
+      "Our WASH, Health & Nutrition department works to safeguard the health and dignity of communities by ensuring access to clean water, adequate sanitation, and essential healthcare and nutrition services. We integrate hygiene education with public health and nutrition outreach to improve overall wellbeing.",
+    objectives: [
+      "Improve Health Outcomes: Reduce waterborne diseases and malnutrition through clean water and food access.",
+      "Strengthen Community Systems: Build local capacity for hygiene, nutrition, and disease prevention.",
+      "Promote Behavioral Change: Use community engagement to foster sustainable hygiene and nutrition practices."
+    ],
+    actions:
+      "Somalia faces a dual crisis of limited healthcare access and widespread malnutrition. Our teams establish safe water systems and sanitation infrastructure in underserved areas. We deliver nutrition screening and referrals, especially for children under five and pregnant women, and we train health workers on disease prevention, first aid, and maternal health. Through health awareness campaigns and hygiene promotion, we’re reducing the spread of preventable diseases and supporting healthier families."
   },
   {
-    image: '/education_update.jpg',
-    href: 'education',
-    name: "Education",
-    items: [
-      "Expanding access to primary and secondary education.",
-      "Enhancing educational quality through teacher development.",
-      "Improved facilities, and adequate school supplies.",
-      "Ensuring inclusive education for marginalized groups."
-    ]
+    icon: "🎓",
+    image: "/education_update.jpg",
+    href: "education",
+    name: "Education Department",
+    summary:
+      "The Education department is committed to expanding access to quality education, especially in communities affected by conflict and displacement. We work to rehabilitate learning environments, supply materials, and support inclusive and alternative learning pathways for vulnerable children and youth.",
+    objectives: [
+      "Enhance Access: Reopen and support schools in hard-to-reach or crisis-affected areas.",
+      "Improve Quality: Train teachers and provide materials to boost learning outcomes.",
+      "Ensure Inclusion: Advocate for marginalized groups including girls, children with disabilities, and pastoralist youth."
+    ],
+    actions:
+      "In Somalia’s fragile education landscape, we rebuild schools, distribute essential learning materials, and provide safe spaces for learning. We run training for teachers on inclusive and participatory pedagogy and support Accelerated Basic Education (ABE) for older children who missed out on school. Through radio lessons and mobile classrooms, we bring learning closer to nomadic communities and displaced families, making education accessible and resilient."
   },
   {
-    image: '/capacity_building.jpg',
+    icon: "🧰",
+    image: "/capacity_building.jpg",
     href: "capacity-building",
-    name: "Capacity Building",
-    items: [
-      "Implementing upskilling workshops.",
-      "Policy and advocacy training.",
-      "Mentoring partnerships.",
-      "Women and youth empowerment.",
-      "Vocational training."
-    ]
+    name: "Capacity Building Department",
+    summary:
+      "Our Capacity Building department empowers local communities, institutions, and youth with the knowledge, tools, and skills they need to lead sustainable development and recovery efforts. We invest in training, mentorship, and leadership development for long-term resilience.",
+    objectives: [
+      "Support Local Governance: Train community leaders and local authorities on leadership and good governance.",
+      "Empower Youth and Women: Provide vocational training, financial literacy, and mentorship opportunities.",
+      "Foster Civic Engagement: Strengthen advocacy skills and community organizing for grassroots actors."
+    ],
+    actions:
+      "To build lasting impact in Somalia, we deliver leadership and management training to community-based organizations (CBOs), offer entrepreneurship support to youth, and facilitate digital literacy programs. Women-led initiatives receive tailored support to ensure their participation in community decision-making. By linking trained individuals with mentors and resources, we’re helping communities build resilience from within."
   }
 ];
+
 
 export const navItems = [
   { href: "/home", label: "Home", className: "tab_details" },

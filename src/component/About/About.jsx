@@ -6,7 +6,12 @@ const About = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
+<>  <div className="about_hero">
+  <img src="/whowera.jpeg" alt="About us" className="about_hero_image" />
+  <h1 className="about_hero_text">About Us</h1>
+</div>
     <div className="about_us_container">
+     
       <section>
         <nav className="about_nav">
           <ul>
@@ -45,7 +50,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
+    </div> </>
   );
 };
 

@@ -1,7 +1,8 @@
 .tenders-main{
     display: flex;
 justify-content: space-evenly;
-    max-width: 100%
+    max-width: 100%;
+    margin-top:10rem;
 }
 .we_hiring{
     width: 30em;

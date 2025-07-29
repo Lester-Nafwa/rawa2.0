@@ -4,11 +4,10 @@
   color: antiquewhite;
   justify-content: space-between;
   align-content: center;
-  gap: 4em;
-  box-shadow: rgba(222, 222, 227, 0.2) 0px 7px 29px 0px;
-  max-width: 70%;
+  background: #ffff;
+  box-shadow: rgba(222, 222, 227, 0.2) 0px 7px 29px 0px; 
   opacity: 0.8;
-  margin: 0 auto;
+  margin: 2rem;
 }
 
 .contact_title {
@@ -17,16 +16,17 @@
   max-width: 60%;
   color: rgb(16, 10, 10);
   line-height: 1.8em;
+  margin-right: 0.4rem;
 }
 
 .contact_details {
   border-radius: 0.5em;
   background-color: white;
   padding: 2em;
+  margin-top: 7rem;
   border: solid grey;
   box-shadow: rgba(43, 43, 56, 0.2) 0px 7px 29px 0px;
-  width: 100%;
-  max-width: 500px; /* Adjust max-width as needed */
+  width: 100%;  
 }
 
 .contact_details input {
@@ -121,4 +121,7 @@
   .comments_area{
     max-width: 90%;
   }
+}
+.about_we_us{
+  width: 50vw;;
 }

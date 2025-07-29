@@ -18,7 +18,7 @@
   padding: 1.3em;
   color: #1e6aa0;
   line-height: 2em;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
   cursor: pointer;
   background-size: cover;
@@ -45,23 +45,18 @@
   justify-content: center;
   text-decoration: none;
 }
-.main-sections{
-display: flex;
-align-items: center;
-justify-content: center;
-justify-items: center;
-align-content: center;
-max-width: 80%;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-gap: 8em;
-background: linear-gradient(to right,white, #e8ebec);
-margin: 0 auto;
-padding: 3em;
-min-height: 100%;
-
+.main-sections {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: linear-gradient(to right, white, #e8ebec);
+  margin: 1rem;
+  padding: 3em;
+  min-width: 80vw;
+  min-height: 50vh;
 }
-.list_sections{
-  span{
+.list_sections {
+  span {
     color: #8aa01e;
     margin-left: 2em;
   }
@@ -69,10 +64,10 @@ min-height: 100%;
 .sector-card:hover .subsect_title {
   color: white;
 }
-.list_sectiosn{
+.list_sectiosn {
   width: 30%;
   height: 30vh;
-  span{
+  span {
     color: #8aa01e;
     margin-left: 2em;
   }
@@ -82,16 +77,17 @@ min-height: 100%;
   color: aliceblue;
   cursor: pointer;
 }
-.details_sector{
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-width: 30%;
-height: 30vh;
+.details_sector {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  color: #fff;
 }
-.items_details{
+.items_details {
   line-height: 1.5em;
+  color: #ffffff;
 }
 .subsect_title {
   font-size: 1.2em;
@@ -101,9 +97,28 @@ height: 30vh;
   padding: 10px;
   border-radius: 5px;
 }
-.title_details{
-  color: green;
-  max-width: 5%;
+.title_details {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.summary{
+  text-align: start !important;
+  color: #fff;
+}
+.sector-banner {
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #1e40af
+  ); 
+  padding: 0.5rem 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
 }
 .sector-link {
   text-decoration: none;
@@ -131,20 +146,20 @@ height: 30vh;
 .read_btn Button:hover {
   background-color: #0a6bbf; /* Slightly darker shade on hover */
 }
-.categories_details{
+.categories_details {
   line-height: 1.5em;
   color: #1e6aa0;
 }
-:hover.categories_details{
+:hover.categories_details {
   color: rgb(15, 187, 130);
 }
-@media screen and (max-width:1300px) {
-  .items_details{
+@media screen and (max-width: 1300px) {
+  .items_details {
     line-height: 1.5em;
     min-width: 100%;
   }
-  .main-sections{
-    max-width: 90%;
+  .main-sections {
+    /* max-width: 90%; */
     min-height: 80vh;
     padding: 0.5em;
     gap: 2em;
@@ -154,27 +169,71 @@ height: 30vh;
   .sector-card {
     width: 100%;
   }
-  .main-sections{
+  .main-sections {
     flex-direction: column;
-    gap:2em;
+    gap: 2em;
     max-width: 100%;
   }
-  .items_details{
+  .items_details {
     max-width: 100%;
   }
-  .details_sector{
+  .details_sector {
     min-width: 100%;
   }
 }
-@media screen and (max-width:550px){
-  .main-sections{
-   margin-top: 8em;
+@media screen and (max-width: 550px) {
+  .main-sections {
+    margin-top: 8em;
     display: flex;
     flex-direction: column;
     min-height: 100%;
   }
-  .details_sector{
+  .details_sector {
     margin-top: 3em;
   }
-  
 }
+/* sector.css */
+
+.sidebar {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sector-list {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.sector-item {
+  margin-bottom: 0.75rem;
+}
+
+.sector-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #e5e7eb;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sector-link:hover {
+  background-color: #374151;
+  color: #fff;
+}
+.details {
+  min-width: 40vw;
+  text-align: justify;
+}
+ .about_we{
+  height: 80vh;
+ }

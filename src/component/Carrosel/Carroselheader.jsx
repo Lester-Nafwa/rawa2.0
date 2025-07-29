@@ -4,11 +4,24 @@ import './CarouselComponent.css';
 const CarouselComponent = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
-    { type: 'video', src: '/reliance.mp4' },
-    { type: 'image', src: '/Strengthen Local Capacities_banner.png'},
-    { type: 'video', src: '/community.mp4', }
-  ];
+const slides = [
+  {
+    type: 'image',
+    src: '/charity.jpeg',
+    caption: 'Supporting Local Charities',
+  },
+  {
+    type: 'image',
+    src: '/cooking.jpeg',
+    caption: 'Empowering Through Cooking Classes',
+  },
+  {
+    type: 'image',
+    src: '/20250407094629_IMG_1837.JPG',
+    caption: 'Skills Training for a Brighter Future',
+  },
+];
+
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -31,11 +44,16 @@ const CarouselComponent = () => {
           key={index}
         >
           <div className="numbertext">{`${index + 1} / ${slides.length}`}</div>
-          {slide.type === 'video' ? (
-            <video src={slide.src} autoPlay loop muted style={{ width: '100%' }} />
-          ) : (
-            <img src={slide.src} alt={slide.caption} style={{ width: '100%' }} />
-          )}
+       <img
+  src={slide.src}
+  alt={slide.caption}
+  style={{
+    width: '100%',
+    height: '80vh',
+    objectFit: 'cover',
+    borderRadius: '8px',
+  }}
+/>
           <div className="text">{slide.caption}</div>
         </div>
       ))}

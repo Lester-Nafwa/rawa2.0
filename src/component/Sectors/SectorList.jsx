@@ -5,18 +5,18 @@ import './sector.css';
 
 const SectorList = () => {
   return (
-    <div>
-      {sectors.map((sector, index) => (
-        <div key={index}>
-          <Link to={`/sectors/${sector.href}`} className="sector-link">
-            <ul className='categories_details'>
+    <div className="sidebar">
+      <ul className="sector-list">
+        {sectors.map((sector, index) => (
+          <li key={index} className="sector-item">
+            <Link to={`/sectors/${sector.href}`} className="sector-link">
               {sector.name}
-            </ul>
-          </Link>
-        </div>
-      ))}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
-}
+};
 
 export default SectorList;

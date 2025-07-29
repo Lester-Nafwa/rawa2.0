@@ -80,36 +80,6 @@ const DesignLayout = () => {
         </div>
       )}
       </Navbar>
-      <div className='main_slide'>
-    <div className="slideshow-container">
-      {slides.map((slide, index) => (
-        <div
-          className={`mySlides fade ${index === currentSlide ? 'active' : ''}`}
-          key={index}
-        >
-          <div className="numbertext">{`${index + 1} / ${slides.length}`}</div>
-          {slide.type === 'video' ? (
-            <video src={slide.src} autoPlay loop muted style={{ width: '100%' }} />
-          ) : (
-            <img src={slide.src} alt={slide.caption} style={{ width: '100%' }} />
-          )}
-          <div className="text">{slide.caption}</div>
-        </div>
-      ))}
-      <div className="prev" onClick={prevSlide}>&#10094;</div>
-      <div className="next" onClick={nextSlide}>&#10095;</div>
-
-      <div style={{ textAlign: 'center' }}>
-        {slides.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${index === currentSlide ? 'active' : ''}`}
-            onClick={() => setSlide(index)}
-          ></span>
-        ))}
-      </div>
-    </div>
-   </div>
 
       <Outlet />
 

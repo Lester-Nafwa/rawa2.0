@@ -46,7 +46,6 @@
   .resources-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.7em;
     justify-content: center;
   }
   
@@ -61,7 +60,6 @@
     height: 100%;
     object-fit: cover;
     border-radius: 0.5em;
-    margin: 0.5em;
   }
   
   /* Responsive Styles */
